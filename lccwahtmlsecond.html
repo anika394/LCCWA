@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="LCCWA1.css" type="text/css" rel="stylesheet">
+    <script src="lccwa.js"></script>
+    <script>coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+    
+    $('.collapse').collapse()
+    
+    var x = true;
+    var y = true;
+    var z = true;
+    var a = true;
+    
+    function displayed()
+    {
+      if (x === true) {
+        document.getElementById("arr2").style.display = "inline";
+        document.getElementById("arr3").style.display = "inline";
+        document.getElementById("med").style.display = "inline";
+        document.getElementById("how").style.display = "inline";
+        document.getElementById("enginf").style.display = "none";
+        document.getElementById("enginfo").style.display = "none";
+        document.getElementById("bot").style.display = "block";
+        x = false;
+        z = false;
+        y = false;
+        a = false;
+      }
+      else {
+        document.getElementById("arr2").style.display = "none";
+        document.getElementById("arr3").style.display = "none";
+        document.getElementById("med").style.display = "none";
+        document.getElementById("how").style.display = "none";
+        document.getElementById("mediainf").style.display = "none";
+        document.getElementById("enginf").style.display = "block";
+        document.getElementById("bioinf").style.display = "none";
+        document.getElementById("howt").style.display = "none";
+        document.getElementById("enginfo").style.display = "block";
+        document.getElementById("bot").style.display = "none";
+        x = true;
+      }
+    }
+    
+    function biodisplayed()
+    {
+      if (y === true) {
+        document.getElementById("eng").style.display = "inline";
+        document.getElementById("arr1").style.display = "inline";
+        document.getElementById("arr2").style.display = "inline";
+        document.getElementById("arr3").style.display = "inline";
+        document.getElementById("med").style.display = "inline";
+        document.getElementById("how").style.display = "inline";
+        document.getElementById("bioinf").style.display = "none";
+        document.getElementById("bot").style.display = "block";
+        x = false;
+        z = false;
+        y = false;
+        a = false;
+      }
+      else {
+        document.getElementById("eng").style.display = "none";
+        document.getElementById("arr1").style.display = "none";
+        document.getElementById("arr2").style.display = "none";
+        document.getElementById("arr3").style.display = "none";
+        document.getElementById("med").style.display = "none";
+        document.getElementById("how").style.display = "none";
+        document.getElementById("mediainf").style.display = "none";
+        document.getElementById("enginf").style.display = "none";
+        document.getElementById("bioinf").style.display = "block";
+        document.getElementById("enginfo").style.display = "none";
+        document.getElementById("howt").style.display = "none";
+        document.getElementById("bot").style.display = "block"; //change to none when more is added
+        y = true;
+      }
+    }
+    
+    function mediadisplayed()
+    {
+      if (z === true) {
+        document.getElementById("arr3").style.display = "inline";
+        document.getElementById("how").style.display = "inline";
+        document.getElementById("mediainf").style.display = "none";
+        document.getElementById("bot").style.display = "block";
+        x = false;
+        z = false;
+        y = false;
+        a = false;      }
+      else {
+        document.getElementById("arr3").style.display = "none";
+        document.getElementById("how").style.display = "none";
+        document.getElementById("bioinf").style.display = "none";
+        document.getElementById("enginf").style.display = "none";
+        document.getElementById("mediainf").style.display = "block";
+        document.getElementById("howt").style.display = "none";
+        document.getElementById("enginfo").style.display = "none";
+        document.getElementById("bot").style.display = "none";
+        z = true;
+      }
+    }
+    
+    function howdisplayed()
+    {
+      if (a === true) {
+        document.getElementById("howt").style.display = "none";
+        document.getElementById("bot").style.display = "block";
+        x = false;
+        z = false;
+        y = false;
+        a = false;      }
+      else {
+        document.getElementById("howt").style.display = "inline";
+        document.getElementById("bioinf").style.display = "none";
+        document.getElementById("enginf").style.display = "none";
+        document.getElementById("mediainf").style.display = "none";
+        document.getElementById("enginfo").style.display = "none";
+        document.getElementById("bot").style.display = "none";
+        a = true;
+      }
+    }</script>
+    <body>
+    <div class='ripple-background'>
+        <div class='circle xxlarge'></div>
+        <div class='circle xlarge'></div>
+        <div class='circle large'></div>
+        <div class='circle medium'></div>
+    </div> 
+
+    <section>
+        <div id="icon-wrapper">
+          <a href='#123'>
+          <div class="icons">
+              <div class="icon-slide-container">
+                <img class="slide-icon" height="100" src="4.png">
+                </div>
+              </div></a>
+            
+              <a href='#bio'><div class="icons2">
+                <div class="icon-slide-container">
+                  <img class="slide-icon" height="100" src="2.png">
+                  </div>
+                </div></a>
+              
+                <a href='#eng'><div class="icons3">
+                  <div class="icon-slide-container">
+                    <img class="slide-icon" height="100" src="3.png">
+                    </div>
+                  </div></a>
+
+                <a href='#123'><div class="icons4">
+                <div class="icon-slide-container">
+                  <img class="slide-icon" height="100" src="lccwa.jpg">
+                  </div>
+                </div></a>
+              
+                <a href='#how'><div class="icons5">
+                  <div class="icon-slide-container">
+                    <img class="slide-icon" height="100" src="5.png">
+                    </div>
+                  </div>
+                
+                  <div class="icons6">
+                    <a href='https://www.ofs.edu.sg/user/anika_sharma/furtherLCCWApafes.html'>
+                    <div class="icon-slide-container">
+                      <img class="slide-icon" height="100" src="6.png">
+                      </div>
+                    </a>
+                    </div>                
+            </div>
+        </section>
+        <a href='#123'><img class="path" src="arrow.gif"></a>
+        <img class="side" src="side.png">
+
+<div class='t'>
+    <a href="#eng"><img class="sides" src="sides.png"></a>
+</div>
+        <img class="path1" src="quote.png" id="123">
+
+        <a href="https://www.ofs.edu.sg/user/anika_sharma/furtherLCCWApafes.html"><div class="position" id="media">
+            <div id="slider-container" class="slider">
+                  <div class="slide">
+                      <img src="1231.png" alt="">
+                  </div>
+                  <div class="slide">
+                      <img src="84358914_10156560569136296_1424575742242455552_o.jpeg" alt="">
+                  </div>
+                  <div class="slide">
+                      <img src="IMAG0583.jpeg" alt="">
+                  </div>
+                  <div class="slide">
+                      <img src="pciture.png" alt="">
+                  </div>
+                  <div class="slide">
+                      <img src="all.jpeg" alt="">
+                  </div>
+            </div>
+        </div></a>
+
+        <div>
+          <img class="cal" src='CALE.png'>
+        </div>
+
+        <div>
+          <img class='long' src='IMG_8008.PNG'>
+          <img class='long2' src='teach.jpeg'>
+          <img class='long3' src='IMG_8011.PNG'>
+        </div>
+
+      <div class="s">
+        <div onclick="biodisplayed()"><img id='bio' class='bio' src='biohead.png'><img id='arr' class='press' src='down1.png'></div>
+        <br>
+        <div onclick="displayed()"><img id='eng' class='lef' src='enghead.png'><img id='arr1' class='press' src='down1.png'></div>
+        <br>
+        <div onclick="mediadisplayed()"><img id='med' class='he' src='media.png'><img id='arr2' class='press' src='down1.png'></div>
+        <br>
+        <br/>
+        <div onclick="howdisplayed()"><img id='how' class='hei' src='howto.png'><img id='arr3' class='press' src='down1.png'></div>
+      </div>
+
+      <div>
+        <img class="yt" id="enginf" src='enginfo.png'>
+        <iframe class="ytt" id="enginfo" src="https://docs.google.com/presentation/d/e/2PACX-1vRc3PP0gqUnmdOnl_yc_75ZfeZD66nAU6lRaAIlyX2RS-ESyi4-cobZbCVlUeCUPDrWdYKd_cdThMO5/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+
+      <div>
+        <img class="ytone" id="bioinf" src='bioinf.png'>
+      </div>
+
+      <div class="yttwo" id="mediainf">
+        <div>
+          <div id="slider-container" class="slider1">
+                <div class="slide">
+                    <img src="1231.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="84358914_10156560569136296_1424575742242455552_o.jpeg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="IMAG0583.jpeg" alt="">
+                </div>
+          </div>
+          <a href="https://www.ofs.edu.sg/user/anika_sharma/furtherLCCWApafes.html"><h2 class='head'>view full gallery here</h2></a>
+        </div>
+      </div>
+
+      <div class="yt3" id="howt">
+        <a href="mailto:ofslccwa@gmail.com"><img class="mail" src='how.png'></a>
+        <a href='mailto:trapti_trivedi@ofs.edu.sg'><img class="mail" src='howc.png'></a>
+      </div>
+
+      <div class="bots" id='bot'>
+        <img class='bottom' src="rounded.png">
+      </div>
+
+    </body>
+</html>
